@@ -12,6 +12,13 @@ Changes made:
 (leave the bottom without the ---, since the one below it will do that for you.
 The \ on every line is required for a Newline, though dont do it on bullet points.)
 -->
+--- 
+Author:T342guy\
+Date: Dec 16th 2025\
+Notes:\
+Changes made:
+
+- Rewrote the SDD's parts considering how we are going to make our system work, aswell add more notes.
 
 --- 
 Author:T342guy\

@@ -18,22 +18,33 @@ So, this project aims to do a few things:
 - Being an easy to know tool for experienced and newcomers alike.
 
 # Development 
-
 This project needs to do a few things to be able to accomplish its purpose. 
 
-- read the data files of source-format models and textures. There may be mulitple types.
-- being able to de-compile them.
-- reading decomp models.
-- correctly re-assembling them for an FBX import.
-- then hopefully correctly reassembled for the final ModelDoc build and export.
+It needs to be able to:
+- read the data files of source-format `.mdl` models and textures. There may be mulitple types, and versions.
+- being able to de-compile `.mdl` format models.
+- reading the raw format models.
+- correctly re-assembling raw format for FBX.
+- then hopefully correctly reassembled correctly. 
+- read and write the `.vmdl` format for self-checking and acctually making the new file. 
+- Read and write the FBX format.
+- Downscale the FBX model automatically by .4 since its some sorta bug with FBX.
 
-This is a mouthful to achive, though we can do a few things to find what we need. 
-1. find the parts of the Crowbar decompiler that reads and decompiles the source models and textures <!--T3: I want to be able to take the existing source code of Crowbar (only the parts i need) and create action bindings that will allow me to use the existing system. That way we dont need to do it ourselves. -->
+## If we were to do `.mdl` --> FBX 
+
+1. find parts of the Crowbar decompiler that reads and decompiles the source models and textures, then tracing how it does it so we can make our own workflow.
 2. find parts of other tools or create ourselves to correctly format these decompiled assets into compileable FBX. <!--T3: This part, yes, I think will need to be ESSENTIAL for this project to be any better then crowbar. otherwise its just a worse version of it. or, skeleton of it. This would atleast be a viable tool to skip crowbar and (perhaps) blender for the acctual compile-for-FBX part. -->
 3. compile for FBX
 4. by now, the model should be fully textured and modeled, with the bones also fully intact. <!--T3: This part I will assume be the hardest pain in the ass to figure out, since source models and FBX are different in every way. Source models (atleast how they are formatted) have so many possibilities that itll be a PAIN for every single type of way they are formatted to be compatible. -->
 5. this should be able to be dropped and exported from ModelDoc. 
 
+Corrections here: The last step, step 4 and 5 above are WRONG. with an FBX they are usally larger then intended, and you need to scale by 0.4 for them to be correct.\
+Then also, you would need to MANUALLY add the textures and other things. 
+
+## If we were to do `.mdl` --> `.vmdl` 
+In notes below this, tecnically we can translate directly to `.vmdl`. And yes, this would be a better option then if we were to take the `.mdl` --> FBX --> `.vmdl` route.\
+However, this comes with potental drawbacks. First of all, old pointers and new pointers between the 2 files may not be easily migrated with this method.\
+This could possibly be solved by doing the `.mdl` --> FBX --> `.vmdl` route, as then they would automatically be re-created. again, this would cause extra steps, more spots of failure, and so fourth.
 
 ## Possible ways to do this. 
 
@@ -58,6 +69,7 @@ Though the workshop tools for Source2 are also on Counter strike 2, Dota 2, and 
 - GoLang 
 
 ## Other requirements 
+Source 2 workshop tools; (can use CS2 aswell)
 1. Download HL:A
 2. Go to `properties` --> `DLC` --> select `Half-life:alyx - workshop tools`.
 3. wait for it to finish downloading.
