@@ -34,6 +34,20 @@ This is a mouthful to achive, though we can do a few things to find what we need
 4. by now, the model should be fully textured and modeled, with the bones also fully intact. <!--T3: This part I will assume be the hardest pain in the ass to figure out, since source models and FBX are different in every way. Source models (atleast how they are formatted) have so many possibilities that itll be a PAIN for every single type of way they are formatted to be compatible. -->
 5. this should be able to be dropped and exported from ModelDoc. 
 
+
+## Possible ways to do this. 
+
+<!--T3: .vmdl and .vmdl_c are the Source 2 engine versions of the format. they are COMPLETELY DIFFERENT. 
+The .mdl and (maybe) .mdl_c are the Source 1 engine formats. The Source 1 format is much more linear whereas the Source 2 format is much more organised. 
+Then also, now discovering that you could tecnically directly transfer .mdl data to .vmdl to be then compiled from ModelDoc may allow us to completely skip the step where we decompile .mdl for an FBX compile.
+--> 
+There is no direct way to easily and simply make a `.vmdl_c` file. A `.vmdl_c` file is the game-side binary compiled version of the model.\
+We can, however, create a `.vmdl` file. The `.vmdl` file is the content-side text version of the encoded model that ModelDoc can read and finally compile into a `.vmdl_c`.\
+
+Also, fortunately, both versions of `.mdl` and `.vmdl_c` file's text format has been documented in the VALVe Developer Community wiki.\
+- https://developer.valvesoftware.com/wiki/VMDL 
+- https://developer.valvesoftware.com/wiki/MDL
+
 # Requirements 
 Source 2 is kinda all over the place between VALVe games, but mostly the exact same.\
 But using the more perferred and widely used amongst the S2FM community, Half-life:Alyx, would be the better version of the source workshop tools to use. (paid)\
