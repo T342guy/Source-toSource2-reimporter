@@ -1,3 +1,4 @@
-# Source-toSource2-reimporter
+# SourceShifter
 
-A Source 2 migration tool that (hopefully) takes your Source 1 models and directly puts them into Source 2 format.
+A currently work in progress migration tool that will allow you to easily, and simply port any source 1 engine model into source 2.\ 
+

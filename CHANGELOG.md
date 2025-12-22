@@ -4,25 +4,27 @@ TEMPLATE:
 --- 
 Author:\
 Date:\
-Notes: (you can rewrite this part.)\
 Changes made:
 
 - I made a change!
 
 (leave the bottom without the ---, since the one below it will do that for you.
-The \ on every line is required for a Newline, though dont do it on bullet points.)
+The \ on every line is required for a Newline, though dont do it on bullet points.
+
+If you made a change same-day, and its still you, just add it to the existing tile.)
 -->
 
+
 --- 
-Author: T342guy\
+Author: @T342guy\
 Date: dec 22nd 2025\
 Notes:\
 Changes made:
 
 - changed the name of the repo from "Source toSource2 reimporter" to "SourceShifter"
   - SourceShifter sounds better since its: short, simple, memorable, unique from any other tool name.
-- TODO: rename the project in all other documents.
-
+- Redid the README with the new repo name.
+- renamed the project in the SDD.
 ---
 Author: T342guy\
 Date:Dec 20th 2025\

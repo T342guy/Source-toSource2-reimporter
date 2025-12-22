@@ -1,9 +1,10 @@
 # Software design document 
 
-This is the Software design document for Source toSource2 reimporter project
-
-- name: Source toSource2 reimporter <!--T3: hehe funny wording sourcetosource2 -->
-- shortname: STS2-REIM
+This is the Software design document for SourceShifter project
+<!--T3: Project was named Source toSource2 reimporter when it was created. But I saw that the name was way too long and quite a mouthful.
+So instead, I am using the name SourceShifter, Since we are "shifting" the old format into the new format, and it is also a short and simple name that can be remembered.
+Then at the same time, it is a uniqe name that hasnt been used with any other widely used tool in the community.-->
+- name: SourceShifter 
 - written by: T342guy
 
 # Pre-Overview
@@ -11,7 +12,7 @@ This is the Software design document for Source toSource2 reimporter project
 > [!TIP]
 > Please read this carefully! There are some keywords in here that will help you understand this document better.
 
-- `Source toSource2 reimporter` - This project, and the name of it.
+- `SourceShifter` - The name of the project.
 - `Source1` - The Source engine.
 - `Source2`, `S2` - The Source 2 engine.
 - `ModelDoc` - The model editor used by the Source2 engine, found in the workshop tools. 
@@ -22,7 +23,7 @@ This is the Software design document for Source toSource2 reimporter project
 
 # Overview
 
-The Source toSource2 reimporter project is designed to fix issues within the community pipeline for re-importing (aka "porting") game models from source1 to source2.\
+The SourceShifter project is designed to fix issues within the community pipeline for re-importing (aka "porting") game models from source1 to source2.\
 Re-importing models to the Source 2 engine from the Source1 engine is a hassle, and is very complex for newcomers.
 
 This project aims to achieve a few things:
