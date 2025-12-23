@@ -25,7 +25,8 @@ Changes made:
   - SourceShifter sounds better since its: short, simple, memorable, unique from any other tool name.
 - Redid the README with the new repo name.
 - renamed the project in the SDD.
-- added a basic Docus template. It currently has no info on the project. 
+- [commit2] added a basic Docus template. 
+- [commit3] added basic info about the project to the website.
 ---
 Author: T342guy\
 Date:Dec 20th 2025\

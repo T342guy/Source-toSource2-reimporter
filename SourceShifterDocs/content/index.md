@@ -16,8 +16,8 @@ The SourceShifter project is a work-in-progress tool aiming for ease of use when
   ---
   color: neutral
   size: xl
-  to: /getting-started/installation
-  trailing-icon: i-lucide-arrow-right
+  to: /welcome!/introduction
+  trailing-icon: i-lucide-circle-help
   ---
   Learn more
   :::
@@ -27,13 +27,14 @@ The SourceShifter project is a work-in-progress tool aiming for ease of use when
   color: neutral
   icon: simple-icons-github
   size: xl
-  to: https://github.com/nuxt-content/docus
+  to: https://github.com/T342guy/SourceShifter
   variant: outline
   ---
   Star on GitHub
   :::
 ::
 
+<!-- 
 ::u-page-section
 #title
 Shipped with many features
