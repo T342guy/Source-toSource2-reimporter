@@ -4,16 +4,25 @@ TEMPLATE:
 --- 
 Author:\
 Date:\
-Changes made:
+Changes:
 
-- I made a change!
+- {commit1} I made a change!
 
 (leave the bottom without the ---, since the one below it will do that for you.
 The \ on every line is required for a Newline, though dont do it on bullet points.
 
-If you made a change same-day, and its still you, just add it to the existing tile.)
+If you made a change same-day, and its still you, just add it to the existing tile. 
+Make sure to add a note of how many commits! like: {commit1})
 -->
 
+--- 
+Author: T342guy\
+Date: dec 26th 2025\
+Changes:
+
+- {commit1} added the Documentation part of the wiki.
+	- added a legacy idea with notes.
+	- added the documentation intro.
 
 --- 
 Author: @T342guy\
